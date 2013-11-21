@@ -1,0 +1,176 @@
+digital/physical
+borderline developer
+	identity
+		Name-Firstname
+			Evrard-Vincent
+		Age
+			28 years old
+	Contact
+		www.ogre.be
+		eMAil
+		Github
+		Phone
+			+32.495.876.315
+		Adrese
+			rue mandeville 23
+			4000 Liège
+			Belgium
+	Education
+		2008-2010
+			Master
+				ERG | Digital Art & Typography
+		2010
+			Thesis
+				Fixer les nuages is a manifest for the true definition of Internet. The most common way to define Internet is the cloud. So Fixer les nuages is a travel into histories about the life in clouds. 
+				Links
+					http://fixerlesnuages.tumblr.com/
+					http://www.fixerlesnuages.ogre.be/fixerLesNuages.pdf
+		2005-2008
+			Bachelor
+				ESA-St Luc | Graphic design & Typography
+				Links
+					http://vimeo.com/8430346
+					http://www.flickr.com/photos/36884945@N06/sets/72157622968413195
+		2004-2005
+				HELMo-Gramme | Industrial Ingeneer
+		1997-2004
+			High School
+				Institut St Joseph | Mathematics & Sciences
+	Skills
+		Code
+			Javascript
+			Html5
+			Css3
+			Php
+			Sql
+			Java
+				Processing
+			C++
+				Arduino
+			Git
+		Visual
+			Illustrator
+			Photoshop
+			inDesign
+			Final Cut
+			Première
+	Langues
+		Français
+			Langue maternelle
+		English
+			Love language
+	Experiences
+		2011 - 2013
+			Interaction developer at Getyoo 
+				In charge of intercative kiosks research and developement. These kiosks are running on Ubuntu and their interactive applications are all based on a homemade "asynchronous-pattern-javascript-engin". These kiosks used to be installed on events as Brussel Motor Show, Walibi, TEDx, Biennale Interieur, and many more. I developed photobooth, videobooth, checkin/out, registration, mediaBrowser, quizz, friendRequest, applicationBrowser
+					Used techno
+						Processing.js
+						Raphael.js
+						Jquery.js
+						Bootstrap
+						Gphoto2
+						Apache2
+						Canvas
+						HTTPS
+						RTP
+						Php
+						Cookies hacking
+						Facebook Graph
+						API Twitter
+						API Youtube
+						API Vimeo 
+						RFID reader
+						Arduino
+						Java
+			Sidekick developer at Getyoo
+				Research and developement of Getyoo core buisiness web application. This application is running by the MVC Zend Framework. There is a link to vimeo channel to report Getyoo activityies.
+					Used techno
+						MySQL/MariaDB
+						API Restful
+						Apache2
+						Php
+						Facebook Graph
+						Highcharts.js
+						API Twitter
+						Javascript
+						Jwplayer
+						Jquery
+		2010 - 2013		
+			Coder for the artist Felix Luque
+				Arduino developer to empower DWI-Modular. I developed a communication protocol to regardless driving 240 stipes led, dispatched on 10 arduinos. The goal was to smoothly drive leds from slow to fast intensity gradient.
+					Used techno
+						Power With Modulation
+						Arduino UNO
+						Tlc5940.h
+						avr/wdt.h
+						XBee
+						C++
+				Arduino developer to empower DWI-Chaos-Synth. I developed a method to writte and read a kind of musical score. The goal was to play X sythetizers through Y potentiometers. I had to read and update potentiometer's position by following prerecorded tracks. The code had to be easily adaptable to update the quantity of synthetizer. The musical score reading had to be asynchronous.
+					Used techno
+						Power With Modulation
+						Arduino MEGA
+						C++
+				Arduino developer to empower Chapter-I-The-Discovery. I had to optimize the wireless data transfert protocol.
+					Used techno
+						Power With Modulation
+						Arduino UNO
+						Tlc5940.h
+						XBee
+						C++
+			Coder and Performer at Union by motion collective
+				Designer, developer and performer of generative / live / interactive video installation. We were rewarded by the Clust'Art and the Zoom Jeune prices. 
+			Coder and Performer at Killing Screen collective
+				I play live generative visual at every kind of party.
+					Used techno
+						ENTTEC DMX USB Pro
+						MIDI Control
+						Processing
+						dmxP512
+						OpenCV
+						OpenGL
+			Hacker and Performer at Osica
+				I play live hacked game console and visual synthetizers on live music.
+					Used techno
+						Sega Mastersystem 2
+						Nintendo NES
+						Televisions
+						Camera
+			Artist by my own
+				Backspace
+					It's an anti/auto-biography. The idea is to catch every typographic characters deleted by the backspace key on your keyboards. And the goal is to print books from this material.
+				Regard
+					Two tall mirrored columns are looking each other in an infinite reflection. In their own each of them holds a camera and a screen.
+				Aphrogenea
+					This sculpture is composed of a glass box filled with a transparent liquid, and a computer. The computer screen is immersed in oil. A digital bubble is displayed, it grows and reaches the top side of the screen, then it turns into a real bubble going up to the oil surface.
+				Datawallet
+					It's A web marketplace who propose to sell your own private data. Cash Back Your Data.
+						Links
+							http://www.datawallet.net/
+				Cube
+					A big movable transparent cube. Each moves self trigger an inside camera.
+				Influenza/Twitter
+					Influenza and Twitter are the same phenomene. This is the magic revelation book.
+						Links
+							http://ogre.be/wp-content/main/it/influenzaTwitter.pdf
+							http://www.flickr.com/photos/36884945@N06/sets/72157625703710645
+		2010/2011/2013
+			Invited artist at PIAS NITE
+				2010 : Realisation of a large ground projection with autogenerated patterns by peoples.
+				2011 : Transformation of devices such as flash lights, confetti machine, buzzer, ... into interactives games with RFID readers.
+				2013 : Realisation of a very old school Nintendo NES remote, completely playable.
+					Used techno
+						ACS acr122 NFC reader
+						Nintendo NES
+						API Getyoo
+						Processing
+						Arduino
+		2010
+			Invited artist and developer at iMAL
+				Processing developer of a giant lowRes screen. I had to develope a Processing library to turn any application into 6x3 pixels resolution and send each pixels color on a DMX array to drive RGB light spots. You can find a présentation <a href="http://www.goo.gl/8G08y">here</a>.
+					Used techno
+						Processing
+						LanBox LCE
+						dmxP512
+						UDP
+			Film maker at iMAL
+				The result is <a href="http://www.goo.gl/9qwxb">here</a>
