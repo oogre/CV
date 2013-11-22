@@ -7,7 +7,7 @@ borderline developer
 			28 years old
 	Contact
 		www.ogre.be
-		eMAil
+		eMAil vincent@ogre.be
 		Github
 		Phone
 			+32.495.876.315
@@ -15,6 +15,24 @@ borderline developer
 			rue mandeville 23
 			4000 Liège
 			Belgium
+	Skills
+		Code
+			Javascript
+			Html5
+			Css3
+			Php
+			Sql
+			Java
+				Processing
+			C++
+				Arduino
+			Git
+		Visual
+			Illustrator
+			Photoshop
+			inDesign
+			Final Cut
+			Première
 	Education
 		2008-2010
 			Master
@@ -36,24 +54,6 @@ borderline developer
 		1997-2004
 			High School
 				Institut St Joseph | Mathematics & Sciences
-	Skills
-		Code
-			Javascript
-			Html5
-			Css3
-			Php
-			Sql
-			Java
-				Processing
-			C++
-				Arduino
-			Git
-		Visual
-			Illustrator
-			Photoshop
-			inDesign
-			Final Cut
-			Première
 	Langues
 		Français
 			Langue maternelle
@@ -69,6 +69,8 @@ borderline developer
 						Jquery.js
 						Bootstrap
 						Gphoto2
+						FFserver
+						FFmpeg
 						Apache2
 						Canvas
 						HTTPS
@@ -79,7 +81,7 @@ borderline developer
 						API Twitter
 						API Youtube
 						API Vimeo 
-						RFID reader
+						NFC reader
 						Arduino
 						Java
 			Sidekick developer at Getyoo
@@ -105,7 +107,7 @@ borderline developer
 						avr/wdt.h
 						XBee
 						C++
-				Arduino developer to empower DWI-Chaos-Synth. I developed a method to writte and read a kind of musical score. The goal was to play X sythetizers through Y potentiometers. I had to read and update potentiometer's position by following prerecorded tracks. The code had to be easily adaptable to update the quantity of synthetizer. The musical score reading had to be asynchronous.
+				Arduino developer to empower DWI-Chaos-Synth. I developed a method to write and read a kind of musical score. The goal was to play X sythetizers through Y potentiometers. I had to read and update potentiometer's position by following prerecorded tracks. The code had to be easily adaptable to update the quantity of synthetizer. The musical score reading had to be asynchronous.
 					Used techno
 						Power With Modulation
 						Arduino MEGA
@@ -128,7 +130,7 @@ borderline developer
 						dmxP512
 						OpenCV
 						OpenGL
-			Hacker and Performer at Osica
+			Hacker and Performer at Osica music band
 				I play live hacked game console and visual synthetizers on live music.
 					Used techno
 						Sega Mastersystem 2

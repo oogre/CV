@@ -1,0 +1,258 @@
+<html>  
+	<head>  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="unCorpsSansSurface.css">
+		
+		<script type="text/javascript" src="../libs/jquery/core.js"></script>  
+		<script type="text/javascript" src="../libs/jquery/color.js"></script> 
+		<script type="text/javascript" src="../libs/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../libs/processingjs/core.js"></script> 
+		<script type="text/javascript" src="../libs/ogre/tools.js"></script>
+		<script type="text/javascript" src="unCorpsSansSurface.js"></script> 
+		<script type="text/javascript">
+			window.onresize = function(event){
+				event.target.innerHeight;
+				event.target.innerWidth;
+			};
+
+			jQuery().ready(function(){
+				document.querySelector('#age .value').innerHTML = Math.floor((new Date() - new Date(1985, 9, 14)) / (365 * 24 * 60 * 60 * 1000))+' years old';
+				  //                  //
+				 // LINKS COLORATION //
+				//                  //
+					var colors =[
+						"#d1d3d3","#dddedd","#d1f1ec",
+						"#E60042","#CCF600","#AC2B50",
+						"#A1B92E","#95002B","#85A000",
+						"#969192","#F23D70","#DAFB3F",
+						"#969293","#F23D70","#E3FB71"
+					];
+					document.querySelectorAll('a').map(function(elem){
+						elem.addEventListener('mouseover', function(event){
+							$(event.target).animate({
+								'color' : colors[Math.floor(Math.random() * colors.length)]
+							},200);
+						}, false);
+						elem.addEventListener('mouseout', function(event){ 
+							$(event.target).animate({
+								'color': "#0000ff"
+							},200);
+						}, false);
+						elem.setAttribute('target', '_blank');
+					});
+				  //                       //
+				 // UN CORPS SANS SURFACE //
+				//                       //
+					window.unCorpsSansSurface = new UnCorpsSansSurface(document.querySelector('canvas#unCorpsSansSurface'));
+					window.addEventListener('resize', unCorpsSansSurface.resize, false);
+			});
+		</script>
+	</head>  
+	<body>
+		<div class='container'>
+			<div class="row">
+				 <div id="data" class="col-md-8">
+					<div class="row">
+						<div id="identity" class="col-md-6">
+							<h2>Identity</h2>
+							<div id="name" class="row">
+								<strong class="tag col-md-5">Name Firsname</strong>
+								<div class="value col-md-7">Evrard Vincent</div>
+							</div>
+							<div id="age" class="row">
+								<strong class="tag col-md-5">Age</strong>
+								<div class="value col-md-7"></div>
+							</div>
+						</div>
+						<div id="contact" class="col-md-6">
+							<h2>Contact</h2>
+							<div id="website" class="row">
+								<strong class="tag col-md-5">Website</strong>
+								<div class="value col-md-7"><a href='http://www.ogre.be'>www.ogre.be</a></div>
+							</div>
+							<div id="mail" class="row">
+								<strong class="tag col-md-5">Email</strong>
+								<div class="value col-md-7">vincent@ogre.be</div>
+							</div>
+							<div id="github" class="row">
+								<strong class="tag col-md-5">Github</strong>
+								<div class="value col-md-7"><a href='https://github.com/oogre'>oogre</a></div>
+							</div>
+							<div id="phone" class="row">
+								<strong class="tag col-md-5">Phone</strong>
+								<div class="value col-md-7">+32&thinsp;495.876.315</div>
+							</div>
+							<div id="address" class="row">
+								<strong class="tag col-md-5">Address</strong>
+								<div class="value col-md-7">rue mandeville 23<br/>4000 Li&egrave;ge<br/>Belgium</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="skills" class="col-md-4">
+							<h2>Skills</h2>
+							<ul class="list-unstyled">
+								<li>
+									<strong>Code</strong>
+									<ul>
+										<li>Javascript</li>
+										<li>Html5</li>
+										<li>Css3</li>
+										<li>Php</li>
+										<li>Sql</li>
+										<li>Java</li>
+										<li>C++</li>
+										<li>Git</li>
+									</ul>
+								</li>
+								<li><strong>Visual</strong>
+									<ul>
+										<li>Illustrator</li>
+										<li>Photoshop</li>
+										<li>inDesign</li>
+										<li>Premi&egrave;re</li>
+										<li>Final Cut</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div id="experiences" class="col-md-8">
+							<h2>Experiences</h2>
+							<ul class="list-unstyled">
+								<li>
+									<strong>2011 - 2013</strong>
+									<ul>
+										<li>
+											<strong>Interaction developer at Getyoo</strong>
+											<blockquote><span>In charge of research and developement of intercative kiosks. These kiosks are running on Ubuntu and their interactive applications are all based on a homemade "asynchronous-pattern-javascript-engin". These kiosks used to be installed on events as Brussel Motor Show, Walibi, TEDx, Biennale Interieur, and many more. I developed photobooth, videobooth, checkin/out, registration, mediaBrowser, quizz, friendRequest, applicationBrowser...</span>
+											<small>
+												Processing.js, Raphael.js, Jquery.js, Bootstrap, Gphoto2, FFserver, FFmpeg, Apache2, Canvas, HTTPS, RTP, Php, Cookies hacking, Facebook&#8239;Graph, API&#8239;Twitter, API&#8239;Youtube, API&#8239;Vimeo , NFC&#8239;reader, Arduino, Java
+											</small>
+											</blockquote>
+										</li>
+										<li>
+											<strong>Sidekick developer at Getyoo</strong>
+											<blockquote><span>Research and developement of Getyoo core buisiness web application. This application is running by the MVC Zend Framework. There is a link to vimeo channel to report Getyoo activityies.</span>
+												<small>
+													MySQL/MariaDB, API&#8239;Restful, Apache2, Php, Facebook Graph, Highcharts.js, API&#8239;Twitter, Javascript, Jwplayer, Jquery
+												</small>
+											</blockquote>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<strong>2010 - 2013</strong>
+									<ul>
+										<li>
+											<strong>Coder for the artist Felix Luque</strong>
+											<blockquote><span>Arduino developer to empower DWI-Modular. I developed a communication protocol to regardless driving 240 stipes led, dispatched on 10 arduinos. The goal was to smoothly drive leds from slow to fast intensity gradient.</span>
+												<small>
+													Power&#8239;With&#8239;Modulation, Arduino&#8239;UNO, Tlc5940.h, avr/wdt.h, XBee, C++
+												</small>
+											</blockquote>
+											<blockquote><span>Arduino developer to empower DWI-Chaos-Synth. I developed a method to write and read a kind of musical score. The goal was to play X sythetizers through Y potentiometers. I had to read and update potentiometer's position by following prerecorded tracks. The code had to be easily adaptable to update the quantity of synthetizer. The musical score reading had to be asynchronous.</span>
+												<small>
+													Power&#8239;With&#8239;Modulation, Arduino&#8239;MEGA, C++
+												</small>
+											</blockquote>
+											<blockquote><span>Arduino developer to empower Chapter-I-The-Discovery. I had to optimize the wireless data transfert protocol.</span>
+												<small>
+													Power&#8239;With&#8239;Modulation, Arduino&#8239;UNO, Tlc5940.h, XBee, C++
+												</small>
+											</blockquote>
+										</li>
+										<li>
+											<strong>Hacker and Performer at Osica music band</strong>
+											<blockquote><span>I play live hacked game console and visual synthetizers on live music.</span>
+											<small>
+												Sega&#8239;Mastersystem&#8239;2, Nintendo&#8239;NES, Televisions, Camera
+											</small>
+											</blockquote>
+										</li>
+										<li>
+											<strong>Coder and Performer at Killing Screen collective</strong>
+											<blockquote><span>I play live generative visual at every kind of party.</span>
+											<small>
+												ENTTEC&#8239;DMX&#8239;USB&#8239;Pro, MIDI Control, Kinect, Processing, dmxP512, OpenCV, OpenGL, GLGraphics, GSVideo, ControlP5, Sound analysis
+											</small>
+											</blockquote>
+										</li>
+										<li>
+											<strong>Coder and Performer at Union by motion collective</strong>
+											<blockquote><span>Designer, developer and performer of generative / live / interactive video installation. We were rewarded by the Clust'Art and the Zoom Jeune prices.</span>
+											<small>
+												ENTTEC&#8239;DMX&#8239;USB&#8239;Pro, MIDI Control, Processing, dmxP512, Sound&#8239;analysis
+											</small>
+											</blockquote>
+										</li>
+										<li>
+											<strong>Artist at OGRE</strong>
+											<blockquote><span><strong>Backspace | </strong>It's an anti/auto-biography. The idea is to catch every typographic characters deleted by the backspace key on your keyboards. And the goal is to print books from this material.</span>
+											</blockquote>
+											<blockquote><span><strong>Regard | </strong>Two tall mirrored columns are looking each other in an infinite reflection. In their own each of them holds a camera and a screen.</span>
+											</blockquote>
+											<blockquote><span><strong>Aphrogenea | </strong>This sculpture is composed of a glass box filled with a transparent liquid, and a computer. The computer screen is immersed in oil. A digital bubble is displayed, it grows and reaches the top side of the screen, then it turns into a real bubble going up to the oil surface. <a href='http://www.ogre.be/aphrogenea/'>Website</a></span>
+											</blockquote>
+											<blockquote><span><strong>Datawallet | </strong>It's A web marketplace who propose to sell your own private data. <a href='http://www.datawallet.net/'>Cash Back Your Data</a></span>
+											</blockquote>
+											<blockquote><span><strong>Cube | </strong>A big movable transparent cube</a>. Each moves self trigger an inside camera. A video is visible <a href='http://www.dailymotion.com/video/x8qz8b_le-cube_creation'>here</a>, more pictures <a href='http://www.multimedialab.be/blog/?p=1205'>there</a> and a website display all pictures captured by the cube <a href='http://ogre.be/foam/'>there</a>.</span>
+											</blockquote>
+											<blockquote><span><strong>Influenza/Twitter | </strong><a href='http://vimeo.com/7795267'>Influenza and Twitter</a> are the same phenomene. This is <a href='http://www.flickr.com/photos/36884945@N06/sets/72157625703710645'>the magic</a> revelation <a href='http://ogre.be/wp-content/main/it/influenzaTwitter.pdf'>book</a>.</span>
+											</blockquote>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<strong>2010/2011/2013</strong>
+									<ul>
+										<li>
+											<strong>Invited artist at PIAS NITE</strong>
+											<blockquote><span>Realisation of a large ground projection with autogenerated patterns by peoples.</span>
+												<small>
+													Processing, OpenCV
+												</small>
+											</blockquote>
+											<blockquote><span>Transformation of devices such as flash lights, confetti machine, buzzer, ... into interactives games with RFID readers.</span>
+												<small>
+													ACS&#8239;acr122&#8239;NFC&#8239;reader, API&#8239;Getyoo, Processing, Arduino
+												</small>
+											</blockquote>
+											<blockquote><span>Realisation of a very old school Nintendo NES remote, completely playable.</span>
+												<small>
+													Nintendo&#8239;NES, <a href='https://www.google.be/search?q=old+radio+grundig&safe=off&espv=210&es_sm=91&source=lnms&tbm=isch&sa=X&ei=vhiOUoz_C4iK7Aa-oIFQ&ved=0CAkQ_AUoAQ&biw=1440&bih=756'>Grundig radio</a>
+												</small>
+											</blockquote>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<strong>2010</strong>
+									<ul>
+										<li>
+											<strong>Invited artist and developer at iMAL</strong>
+											<blockquote><span>Processing developer of a giant lowRes screen. I had to develope a Processing library to turn any application into 6x3 pixels resolution and send each pixels color on a DMX array to drive RGB light spots. You can find a présentation <a href="http://www.goo.gl/8G08y">here</a>.</span>
+												<small>
+													Processing, LanBox&#8239;LCE, dmxP512, UDP
+												</small>
+											</blockquote>
+										</li>
+										<li>
+											<strong>Film maker at iMAL</strong>
+											<blockquote><span>The result is <a href="http://www.goo.gl/9qwxb">here</a></span>
+											</blockquote>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				 </div>
+				 <div class="col-md-4"></div>
+			</div>
+		</div>
+		<canvas id="unCorpsSansSurface"></canvas>
+	</body>
+</html>

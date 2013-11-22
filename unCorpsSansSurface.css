@@ -1,0 +1,52 @@
+body{
+	font-family: 'Anonymous Pro', serif;
+	font-size: 12.5px;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: none;
+	text-decoration: none;
+	letter-spacing: 0.091em;
+	word-spacing: 0em;
+	line-height: 1.1em;
+	color:#555;
+	margin: 0;
+}
+canvas#unCorpsSansSurface{
+	position:fixed;
+	z-index:-100;
+	top:0;
+	left:0;
+}
+a{
+	color:#00f;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+a:visited{
+	color:#00f;
+}
+
+ul, li{
+	list-style-type:none;
+}
+
+::-moz-selection{
+	background:#ff0;
+    color:#888;
+}
+
+::selection {
+	background:#ff0;
+	color:#888;
+}
+.list-unstyled blockquote{
+	border-left:none;	
+	padding-top:0;
+	padding-bottom:0;
+}
+.list-unstyled blockquote small:before{
+	content: none;
+}
