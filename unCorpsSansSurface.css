@@ -1,4 +1,10 @@
-body{
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('Anonymous Pro.ttf');
+
+}
+
+body#ogre{
 	font-family: 'Anonymous Pro', serif;
 	font-size: 12.5px;
 	font-style: normal;
@@ -27,6 +33,26 @@ a:hover{
 }
 a:visited{
 	color:#00f;
+}
+
+#ogre h1 {
+	position: fixed;
+	font-size: 1.5em;
+	text-align: right;
+	width: 300px;
+	font-family: 'Anonymous Pro', serif;
+	font-weight: 800;
+	line-height: 0.8;
+	color: inherit;
+	margin:0;
+	top: 50%;
+	right: 100px;
+}
+#ogre h2, #ogre h3, #ogre h4, #ogre h5, #ogre h6{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
 }
 
 ul, li{

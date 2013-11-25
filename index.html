@@ -1,23 +1,22 @@
 <html>  
 	<head>  
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="unCorpsSansSurface.css">
 		
-		<script type="text/javascript" src="../libs/jquery/core.js"></script>  
-		<script type="text/javascript" src="../libs/jquery/color.js"></script> 
-		<script type="text/javascript" src="../libs/bootstrap/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../libs/processingjs/core.js"></script> 
-		<script type="text/javascript" src="../libs/ogre/tools.js"></script>
+		<script type="text/javascript" src="libs/jquery/core.js"></script>  
+		<script type="text/javascript" src="libs/jquery/color.js"></script> 
+		<script type="text/javascript" src="libs/processingjs/core.js"></script> 
+		<script type="text/javascript" src="libs/ogre/tools.js"></script>
 		<script type="text/javascript" src="unCorpsSansSurface.js"></script> 
 		<script type="text/javascript">
-			window.onresize = function(event){
-				event.target.innerHeight;
-				event.target.innerWidth;
-			};
-
 			jQuery().ready(function(){
+				var unbreakablechar = document.querySelector('#unbreakablechar');
+				if(mobilecheck() && RegExp){
+					document.body.innerHTML = document.body.innerHTML.replace(new RegExp(unbreakablechar.innerHTML, 'g'), ' ');
+				};
+				unbreakablechar.parentNode.removeChild(unbreakablechar);
 				document.querySelector('#age .value').innerHTML = Math.floor((new Date() - new Date(1985, 9, 14)) / (365 * 24 * 60 * 60 * 1000))+' years old';
 				  //                  //
 				 // LINKS COLORATION //
@@ -50,7 +49,9 @@
 			});
 		</script>
 	</head>  
-	<body>
+	<body id='ogre'>
+		<div id='unbreakablechar'>&#8239;</div>
+		<h1>digital/physical:</br>borderline developer</h1>
 		<div class='container'>
 			<div class="row">
 				 <div id="data" class="col-md-8">
@@ -58,7 +59,7 @@
 						<div id="identity" class="col-md-6">
 							<h2>Identity</h2>
 							<div id="name" class="row">
-								<strong class="tag col-md-5">Name Firsname</strong>
+								<strong class="tag col-md-5">Name Firstname</strong>
 								<div class="value col-md-7">Evrard Vincent</div>
 							</div>
 							<div id="age" class="row">
@@ -91,32 +92,103 @@
 						</div>
 					</div>
 					<div class="row">
-						<div id="skills" class="col-md-4">
-							<h2>Skills</h2>
-							<ul class="list-unstyled">
-								<li>
-									<strong>Code</strong>
-									<ul>
-										<li>Javascript</li>
-										<li>Html5</li>
-										<li>Css3</li>
-										<li>Php</li>
-										<li>Sql</li>
-										<li>Java</li>
-										<li>C++</li>
-										<li>Git</li>
+						<div class="col-md-4">
+							<div id="skills" class="row">
+								<div class="col-md-12">
+									<h2>Skills</h2>
+									<ul class="list-unstyled">
+										<li>
+											<strong>Code</strong>
+											<ul>
+												<li>Javascript</li>
+												<li>Html5</li>
+												<li>Css3</li>
+												<li>Php</li>
+												<li>Sql</li>
+												<li>Java</li>
+												<li>C++</li>
+												<li>Git</li>
+											</ul>
+										</li>
+										<li><strong>Visual</strong>
+											<ul>
+												<li>Illustrator</li>
+												<li>Photoshop</li>
+												<li>inDesign</li>
+												<li>Premi&egrave;re</li>
+												<li>Final Cut</li>
+											</ul>
+										</li>
 									</ul>
-								</li>
-								<li><strong>Visual</strong>
-									<ul>
-										<li>Illustrator</li>
-										<li>Photoshop</li>
-										<li>inDesign</li>
-										<li>Premi&egrave;re</li>
-										<li>Final Cut</li>
+								</div>
+							</div>
+							<div id="languages" class="row">
+								<div class="col-md-12">
+									<h2>Languages</h2>
+									<ul class="list-unstyled">
+										<li>
+											<strong>Fran&ccedil;ais</strong>
+											<ul>
+												<li>Langue maternelle</li>
+											</ul>
+										</li>
+										<li>
+											<strong>English</strong>
+											<ul>
+												<li>Intense practice since 18th July 2013</li>
+											</ul>
+										</li>
 									</ul>
-								</li>
-							</ul>
+								</div>
+							</div>
+							<div id="education" class="row">
+								<div class="col-md-12">
+									<h2>Education</h2>
+									<ul class="list-unstyled">
+									<li>
+										<strong>2008 - 2010</strong>
+										<ul>
+											<li>
+												<strong>Master degree at&#8239;<a href='http://www.erg.be/erg/'>ERG</a></strong>
+												<strong><a href='http://www.flickr.com/photos/marcwathieu/sets/72157622327052584/with/4729156198'>Digital&#8239;Art&#8239;&&#8239;Typography</a></strong>
+												<blockquote><span>Thesis : <a href='http://www.fixerlesnuages.ogre.be/fixerLesNuages.pdf'>Fixer les nuages</a> is a manifest for the true definition of Internet. The most common way to define Internet is the cloud. So Fixer les nuages is a <a href='http://fixerlesnuages.tumblr.com'>travel</a> into histories about the life in clouds</span>
+												</blockquote>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong>2005-2008</strong>
+										<ul>
+											<li>
+												<strong>Bachelor degree at&#8239;<a href='http://www.saintluc-liege.be/'>ESA&#8239;Saint&#8239;Luc</a></strong>
+												<strong>Graphic&#8239;design&#8239;&&#8239;Typography</strong>
+												<blockquote><span><a href='http://www.flickr.com/photos/36884945@N06/sets/72157622968413195'>Some pictures</a></span>
+												</blockquote>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong>2004-2005</strong>
+										<ul>
+											<li>
+												<strong>Bachelor degree at&#8239;<a href='http://www.helmo.be/CMS/Institution/Instituts/HELMo-Gramme/Accueil.aspx'>HELMo-Gramme</a></strong>
+												<strong>Industrial&#8239;Ingeneer</strong>
+												<blockquote><span></span></blockquote>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong>1997-2004</strong>
+										<ul>
+											<li>
+												<strong>High School degree at&#8239;<a href='http://www.saint-jo.be/'>Institut&#8239;Saint&#8239;Joseph</a></strong>
+												<strong>Mathematics&#8239;&&#8239;Sciences</strong>
+												<blockquote><span></span></blockquote>
+											</li>
+										</ul>
+									</li>
+								</div>
+							</div>
 						</div>
 						<div id="experiences" class="col-md-8">
 							<h2>Experiences</h2>
@@ -125,18 +197,18 @@
 									<strong>2011 - 2013</strong>
 									<ul>
 										<li>
-											<strong>Interaction developer at Getyoo</strong>
+											<strong>Interaction developer at <a href='http://getyoo.com/'>Getyoo</a></strong>
 											<blockquote><span>In charge of research and developement of intercative kiosks. These kiosks are running on Ubuntu and their interactive applications are all based on a homemade "asynchronous-pattern-javascript-engin". These kiosks used to be installed on events as Brussel Motor Show, Walibi, TEDx, Biennale Interieur, and many more. I developed photobooth, videobooth, checkin/out, registration, mediaBrowser, quizz, friendRequest, applicationBrowser...</span>
 											<small>
-												Processing.js, Raphael.js, Jquery.js, Bootstrap, Gphoto2, FFserver, FFmpeg, Apache2, Canvas, HTTPS, RTP, Php, Cookies hacking, Facebook&#8239;Graph, API&#8239;Twitter, API&#8239;Youtube, API&#8239;Vimeo , NFC&#8239;reader, Arduino, Java
+												Javascript, Async patern, Ajax, Jquery.js, Processing.js, Raphael.js, Canvas, Bootstrap, Gphoto2, FFserver, FFmpeg, RTP, HTTPS, Apache2, PHP, Cookies hacking, FacebookGraph, TwitterAPI, YoutubeAPI, VimeoAPI , NFC&#8239;reader, Arduino, Java
 											</small>
 											</blockquote>
 										</li>
 										<li>
-											<strong>Sidekick developer at Getyoo</strong>
+											<strong>Sidekick developer at <a href='http://getyoo.com/'>Getyoo</a></strong>
 											<blockquote><span>Research and developement of Getyoo core buisiness web application. This application is running by the MVC Zend Framework. There is a link to vimeo channel to report Getyoo activityies.</span>
 												<small>
-													MySQL/MariaDB, API&#8239;Restful, Apache2, Php, Facebook Graph, Highcharts.js, API&#8239;Twitter, Javascript, Jwplayer, Jquery
+													PHP, MySQL/MariaDB, Restful&#8239;API, Javascript, Jwplayer, Jquery, RTP, HTTPS, Apache2, FacebookGraph, TwitterAPI, Highcharts.js
 												</small>
 											</blockquote>
 										</li>
@@ -146,44 +218,44 @@
 									<strong>2010 - 2013</strong>
 									<ul>
 										<li>
-											<strong>Coder for the artist Felix Luque</strong>
-											<blockquote><span>Arduino developer to empower DWI-Modular. I developed a communication protocol to regardless driving 240 stipes led, dispatched on 10 arduinos. The goal was to smoothly drive leds from slow to fast intensity gradient.</span>
+											<strong>Coder for the artist <a href='http://www.felixluque.com/'>Felix Luque</a></strong>
+											<blockquote><span>Arduino developer to empower <a href='http://www.felixluque.com/DWI-Modular'>DWI-Modular</a>.</br> I developed a communication protocol to regardless driving 240 stipes led, dispatched on 10 arduinos. The goal was to smoothly drive leds from slow to fast intensity gradient.</span>
 												<small>
-													Power&#8239;With&#8239;Modulation, Arduino&#8239;UNO, Tlc5940.h, avr/wdt.h, XBee, C++
+													C++, Arduino&#8239;UNO, PWM, XBee, Tlc5940.h, avr/wdt.h
 												</small>
 											</blockquote>
-											<blockquote><span>Arduino developer to empower DWI-Chaos-Synth. I developed a method to write and read a kind of musical score. The goal was to play X sythetizers through Y potentiometers. I had to read and update potentiometer's position by following prerecorded tracks. The code had to be easily adaptable to update the quantity of synthetizer. The musical score reading had to be asynchronous.</span>
+											<blockquote><span>Arduino developer to empower <a href='http://www.felixluque.com/DWI-Chaos-Synth'>DWI-Chaos-Synth</a>.</br> I developed a method to write and read a kind of musical score. The goal was to play X sythetizers through Y potentiometers. I had to read and update potentiometer's position by following prerecorded tracks. The code had to be easily adaptable to update the quantity of synthetizer. The musical score reading had to be asynchronous.</span>
 												<small>
-													Power&#8239;With&#8239;Modulation, Arduino&#8239;MEGA, C++
+													C++, Arduino&#8239;MEGA, PWM
 												</small>
 											</blockquote>
-											<blockquote><span>Arduino developer to empower Chapter-I-The-Discovery. I had to optimize the wireless data transfert protocol.</span>
+											<blockquote><span>Arduino developer to empower <a href='http://www.felixluque.com/Chapter-I-The-Discovery'>Chapter-I-The-Discovery</a>.</br> I had to optimize the wireless data transfert protocol.</span>
 												<small>
-													Power&#8239;With&#8239;Modulation, Arduino&#8239;UNO, Tlc5940.h, XBee, C++
+													C++, Arduino&#8239;UNO, PWM, XBee, Tlc5940.h
 												</small>
 											</blockquote>
 										</li>
 										<li>
-											<strong>Hacker and Performer at Osica music band</strong>
+											<strong>Hacker and Performer at <a href='http://www.osica-music.com/'>Osica</a></strong>
 											<blockquote><span>I play live hacked game console and visual synthetizers on live music.</span>
-											<small>
-												Sega&#8239;Mastersystem&#8239;2, Nintendo&#8239;NES, Televisions, Camera
-											</small>
+												<small>
+													Sega&#8239;Mastersystem&#8239;2, Nintendo&#8239;NES, Televisions, Camera
+												</small>
 											</blockquote>
 										</li>
 										<li>
-											<strong>Coder and Performer at Killing Screen collective</strong>
+											<strong>Coder and Performer at <a href='https://www.facebook.com/pages/Killing-Screen-Interactive-Designer-Label/184282934951038'>Killing Screen</a></strong>
 											<blockquote><span>I play live generative visual at every kind of party.</span>
-											<small>
-												ENTTEC&#8239;DMX&#8239;USB&#8239;Pro, MIDI Control, Kinect, Processing, dmxP512, OpenCV, OpenGL, GLGraphics, GSVideo, ControlP5, Sound analysis
-											</small>
+												<small>
+													Processing, ENTTEC&#8239;DMX&#8239;USB&#8239;Pro, MIDI Control, Kinect, dmxP512, OpenCV, OpenGL, GLGraphics, GSVideo, ControlP5, Sound&#8239;analysis
+												</small>
 											</blockquote>
 										</li>
 										<li>
-											<strong>Coder and Performer at Union by motion collective</strong>
+											<strong>Coder and Performer at <a href='http://vimeo.com/17757021'>Union by motion</a></strong>
 											<blockquote><span>Designer, developer and performer of generative / live / interactive video installation. We were rewarded by the Clust'Art and the Zoom Jeune prices.</span>
 											<small>
-												ENTTEC&#8239;DMX&#8239;USB&#8239;Pro, MIDI Control, Processing, dmxP512, Sound&#8239;analysis
+												Processing, ENTTEC&#8239;DMX&#8239;USB&#8239;Pro, MIDI Control, dmxP512, Sound&#8239;analysis
 											</small>
 											</blockquote>
 										</li>
@@ -193,13 +265,13 @@
 											</blockquote>
 											<blockquote><span><strong>Regard | </strong>Two tall mirrored columns are looking each other in an infinite reflection. In their own each of them holds a camera and a screen.</span>
 											</blockquote>
-											<blockquote><span><strong>Aphrogenea | </strong>This sculpture is composed of a glass box filled with a transparent liquid, and a computer. The computer screen is immersed in oil. A digital bubble is displayed, it grows and reaches the top side of the screen, then it turns into a real bubble going up to the oil surface. <a href='http://www.ogre.be/aphrogenea/'>Website</a></span>
+											<blockquote><span><strong><a href='http://www.ogre.be/aphrogenea/'>Aphrogenea</a> | </strong>This sculpture is composed of a glass box filled with a transparent liquid, and a computer. The computer screen is immersed in oil. A digital bubble is displayed, it grows and reaches the top side of the screen, then it turns into a real bubble going up to the oil surface.</span>
 											</blockquote>
-											<blockquote><span><strong>Datawallet | </strong>It's A web marketplace who propose to sell your own private data. <a href='http://www.datawallet.net/'>Cash Back Your Data</a></span>
+											<blockquote><span><strong><a href='http://www.datawallet.net/'>Datawallet</a> | </strong>It's the web marketplace where you can sell your own private data. Cash Back Your Data !</span>
 											</blockquote>
-											<blockquote><span><strong>Cube | </strong>A big movable transparent cube</a>. Each moves self trigger an inside camera. A video is visible <a href='http://www.dailymotion.com/video/x8qz8b_le-cube_creation'>here</a>, more pictures <a href='http://www.multimedialab.be/blog/?p=1205'>there</a> and a website display all pictures captured by the cube <a href='http://ogre.be/foam/'>there</a>.</span>
+											<blockquote><span><strong><a href='http://www.dailymotion.com/video/x8qz8b_le-cube_creation'>Cube</a> | </strong>A big movable transparent cube</a>. Each moves self trigger an inside camera. A description is available <a href='http://www.multimedialab.be/blog/?p=1205'>here</a> and a website display all pictures captured by the cube <a href='http://ogre.be/foam/'>there</a>.</span>
 											</blockquote>
-											<blockquote><span><strong>Influenza/Twitter | </strong><a href='http://vimeo.com/7795267'>Influenza and Twitter</a> are the same phenomene. This is <a href='http://www.flickr.com/photos/36884945@N06/sets/72157625703710645'>the magic</a> revelation <a href='http://ogre.be/wp-content/main/it/influenzaTwitter.pdf'>book</a>.</span>
+											<blockquote><span><strong><a href='http://vimeo.com/7795267'>Influenza/Twitter</a> | </strong>Influenza and Twitter are the same phenomene. This is <a href='http://www.flickr.com/photos/36884945@N06/sets/72157625703710645'>the magic</a> revelation <a href='http://ogre.be/wp-content/main/it/influenzaTwitter.pdf'>book</a>.</span>
 											</blockquote>
 										</li>
 									</ul>
@@ -214,9 +286,9 @@
 													Processing, OpenCV
 												</small>
 											</blockquote>
-											<blockquote><span>Transformation of devices such as flash lights, confetti machine, buzzer, ... into interactives games with RFID readers.</span>
+											<blockquote><span>Transformation of devices such as flash lights, confetti machine, buzzer... into interactives games with RFID readers.</span>
 												<small>
-													ACS&#8239;acr122&#8239;NFC&#8239;reader, API&#8239;Getyoo, Processing, Arduino
+													 Processing, Arduino, ACS&#8239;acr122&#8239;NFC&#8239;reader, API&#8239;Getyoo
 												</small>
 											</blockquote>
 											<blockquote><span>Realisation of a very old school Nintendo NES remote, completely playable.</span>
@@ -227,13 +299,12 @@
 										</li>
 									</ul>
 								</li>
-
 								<li>
 									<strong>2010</strong>
 									<ul>
 										<li>
 											<strong>Invited artist and developer at iMAL</strong>
-											<blockquote><span>Processing developer of a giant lowRes screen. I had to develope a Processing library to turn any application into 6x3 pixels resolution and send each pixels color on a DMX array to drive RGB light spots. You can find a présentation <a href="http://www.goo.gl/8G08y">here</a>.</span>
+											<blockquote><span>Processing developer of <a href="http://www.goo.gl/8G08y">a giant lowRes screen</a>. I had to develope a Processing library to turn any graphical application into 6x3 pixels resolution and send each pixels color on a DMX array to drive RGB light spots..</span>
 												<small>
 													Processing, LanBox&#8239;LCE, dmxP512, UDP
 												</small>

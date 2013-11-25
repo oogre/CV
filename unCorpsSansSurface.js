@@ -2,6 +2,14 @@ var UnCorpsSansSurface = function(elem){
 	var _canvas = elem;
 	var _goldenNumber = 1.618;
 	var _Sketch = function(P){
+		var position = {
+			x : window.innerWidth - 100,
+			y : window.innerHeight / 2,
+			update : function(){
+				position.x = window.innerWidth - 100;
+				position.y = window.innerHeight / 2;
+			}
+		}
 		var diameter = _goldenNumber * 50;
 		var nPoints = _goldenNumber * 500;
 		var points = [];
@@ -15,6 +23,7 @@ var UnCorpsSansSurface = function(elem){
 			_canvas.style.width = width;
 			_canvas.style.height = height;
 			incrementator = height / 50000.0;
+			position.update();
 			return P.size(width,height);
 		};
 	
@@ -44,7 +53,7 @@ var UnCorpsSansSurface = function(elem){
 				xoff = xoff + P.random(1);
 				Delta[c] += Sigma[c] * P.noise( xoff );
 				( LIMIT < P.abs(Delta[c])) && (Sigma[c]=-Sigma[c]);
-				P.vertex( points[c].x + P.width - 100 , points[c].y + P.height/2 );
+				P.vertex( points[c].x + position.x , points[c].y + position.y);
 			}
 			diameter += incrementator;
 			P.endShape();  
